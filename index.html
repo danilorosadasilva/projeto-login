@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      </style> -->
 </head>
+
 <body>
-    
+    <main>
+        <section id="login">
+            <div id="imagem">
+            </div>
+            <button>cadastre</button>
+            <div id="formulario">
+
+                <fieldset>
+                    <legend>
+                        <h1>login</h1>
+                    </legend>
+                    <p>SEJA BEM VINDO(A) NOVAMENTE,<br>FASSA LOGIN PARA ENTRA...</p>
+
+                    <form action="login.php" method="post">
+                        
+                        <input type="text" name="nome" id="inome" required autocomplete="off" placeholder="SEU NOME">
+                        <hr ><br>
+                        <input type="password" name="senha" id="isenha" required autocomplete="off" placeholder="SENHA">
+                        <hr><br>
+                        <input id="botao-login" type="submit" value="login">
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

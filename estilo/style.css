@@ -1,1 +1,151 @@
 @charset "UTF-8";
+
+/* paleta cores*/
+:root {
+    --cor1: #475920;
+    --cor2: #6E8C03;
+    --cor3: #F2CA99;
+    --cor4: #BF7B3F;
+    --cor5: #8C442A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #bf7b3f27;
+}
+
+main {
+    position: relative;
+}
+
+section {
+    border: 2px solid var(--cor5);
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px var(--cor5);
+    background-color: var(--cor4);
+    width: 600px;
+    height: 290px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    overflow: hidden;
+    padding: 3px;
+    box-shadow: 10px 10px 0px #312317;
+}
+
+#imagem {
+    position: absolute;
+    padding: 10px;
+    right: -1%;
+    top: 0%;
+    width: 280px;
+    height: 290px;
+    background: #ffffff1c url('../imagem/imagen-login.jpg') no-repeat center;
+    background-size: cover;
+    background-position: center bottom;
+
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.171);
+}
+
+h1,
+p,
+input {
+    font-weight: bold;
+    text-align: left;
+    text-decoration: dashed;
+    text-indent: 1px;
+    margin-left: 5px;
+    color: #312317;
+}
+
+form {
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 1px;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+    border: 0px solid #cccccc00;
+    border-radius: 5px;
+    background-color: #f2f2f200;
+    color: #050505;
+    font-size: 14px;
+    padding: 0px;
+    margin: 1px;
+    text-align: center;
+    outline: none;
+}
+::placeholder {
+    color: #0000005e; /* Substitua pela cor desejada */
+  }
+
+#botao-login {
+
+    position: absolute;
+    margin-top: 15px;
+    background-color: #475920;
+    color: #ffffff;
+    border: none;
+    left: 13%;
+    top: 79%;
+
+    background-color: #312317;
+
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    font-size: 1.5em;
+    transition: 1s;
+}
+
+#botao-login:hover {
+    background-color: #312317bd;
+}
+
+hr{
+    border-color:#8c442a5e;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 0.1px;
+    width: 300px;
+    align-items: center;
+}
+
+
+button {
+    display: block;
+    position: absolute;
+    top: 84%;
+    left: 65%;
+    background-color: #6e8c0315;
+    border-style: none;
+    border: 1px solid #6E8C03;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    font-size: 1.5em;
+    transition: 3s;
+}
+button:hover{
+    background-color: #6e8c0352;
+}
+
+fieldset {
+    border: 1px solid #8c442a91;
+    width: 300px;
+    height: 280px;
+    border-radius: 5px;
+    outline: #000000;
+}
